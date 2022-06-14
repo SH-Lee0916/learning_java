@@ -1,1 +1,5 @@
-# learning_java
+# re-Start Java
+
+### Plan
+* Basic syntax of Java
+* Implementing calendar
