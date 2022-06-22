@@ -3,6 +3,7 @@ package BasicSyntax.codewars_fundmental;
 public class DisemvowelTrolls {
     public String disemvowel(String str) {
         return str.replaceAll("a|e|i|o|u|A|E|I|O|U", "");
+        // (?i)[aeiou]
     }
 
     public static void main(String[] args) {
