@@ -1,5 +1,6 @@
 package BasicSyntax.codewars_fundmental;
 
+// https://www.codewars.com/kata/56747fd5cb988479af000028
 public class GetTheMiddleCharacter {
     public String getMiddle(String word) {
         int len = word.length();
