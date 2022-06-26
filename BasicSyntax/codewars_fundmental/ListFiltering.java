@@ -3,6 +3,7 @@ package BasicSyntax.codewars_fundmental;
 import java.util.List;
 import java.util.ArrayList;
 
+// https://www.codewars.com/kata/53dbd5315a3c69eed20002dd/
 public class ListFiltering {
     public List<Object> filterList(final List<Object> list) {
         List<Object> resultList = new ArrayList<Object>();
