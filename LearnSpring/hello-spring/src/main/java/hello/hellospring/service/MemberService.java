@@ -6,6 +6,9 @@ import java.util.Optional;
 import hello.hellospring.domain.Member;
 import hello.hellospring.repository.MemberRepository;
 
+import org.springframework.stereotype.Service;
+
+// @Service
 public class MemberService {
     private final MemberRepository memberRepository;
 
