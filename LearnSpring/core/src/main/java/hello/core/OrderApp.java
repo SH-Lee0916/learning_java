@@ -1,5 +1,8 @@
 package hello.core;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
 // import hello.core.disount.FixDiscountPolicy;
 import hello.core.member.Grade;
 import hello.core.member.Member;
@@ -14,9 +17,14 @@ public class OrderApp {
     public static void main(String[] args) {
         // MemberService memberService = new MemberServiceImpl(new MemoryMemberRepository());
         // OrderService orderService = new OrderServiceImpl(new MemoryMemberRepository(), new FixDiscountPolicy());
-        AppConfig appConfig = new AppConfig();
-        MemberService memberService = appConfig.memberService();
-        OrderService orderService = appConfig.OrderService();
+        // AppConfig appConfig = new AppConfig();
+        // MemberService memberService = appConfig.memberService();
+        // OrderService orderService = appConfig.OrderService();
+
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
+
+        MemberService memberService = applicationContext.getBean("memberService", MemberService.class);
+        OrderService orderService = applicationContext.getBean("OrderService", OrderService.class);
 
         Long memberId = 1L;
         Member member = new Member(memberId, "member1", Grade.VIP);
