@@ -21,6 +21,7 @@ public class OrderApp {
         // MemberService memberService = appConfig.memberService();
         // OrderService orderService = appConfig.OrderService();
 
+        // Spring container
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
 
         MemberService memberService = applicationContext.getBean("memberService", MemberService.class);
