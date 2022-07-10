@@ -1,6 +1,6 @@
 package hello.core.order;
 
-import hello.core.disount.DiscountPolicy;
+import hello.core.discount.DiscountPolicy;
 // import hello.core.disount.FixDiscountPolicy;
 // import hello.core.disount.RateDiscountPolicy;
 import hello.core.member.Member;

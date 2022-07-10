@@ -3,9 +3,8 @@ package hello.core;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import hello.core.disount.DiscountPolicy;
-// import hello.core.disount.FixDiscountPolicy;
-import hello.core.disount.RateDiscountPolicy;
+import hello.core.discount.DiscountPolicy;
+import hello.core.discount.RateDiscountPolicy;
 import hello.core.member.MemberRepository;
 import hello.core.member.MemberService;
 import hello.core.member.MemberServiceImpl;
