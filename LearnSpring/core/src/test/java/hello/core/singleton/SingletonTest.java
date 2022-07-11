@@ -3,6 +3,8 @@ package hello.core.singleton;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import hello.core.AppConfig;
 import hello.core.member.MemberService;
@@ -18,8 +20,8 @@ public class SingletonTest {
 
         MemberService memberService2 = appConfig.memberService();
 
-        // System.out.println("memberService1: " + memberService1);
-        // System.out.println("memberService2: " + memberService2);
+        System.out.println("memberService1: " + memberService1);
+        System.out.println("memberService2: " + memberService2);
 
         Assertions.assertThat(memberService1).isNotSameAs(memberService2);
     }
@@ -34,5 +36,20 @@ public class SingletonTest {
         System.out.println("singletonService2: " + singletonService2);
 
         Assertions.assertThat(singletonService1).isSameAs(singletonService2);
+    }
+
+    @Test
+    @DisplayName("Spring container and Singleton")
+    void springContainer() {
+
+        ApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
+
+        MemberService memberService1 = ac.getBean("memberService", MemberService.class);
+        MemberService memberService2 = ac.getBean("memberService", MemberService.class);
+
+        System.out.println("memberService1: " + memberService1);
+        System.out.println("memberService2: " + memberService2);
+
+        Assertions.assertThat(memberService1).isSameAs(memberService2);
     }
 }

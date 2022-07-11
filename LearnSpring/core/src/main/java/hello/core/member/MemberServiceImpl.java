@@ -18,4 +18,10 @@ public class MemberServiceImpl implements MemberService{
         return memberRepository.findById(memberId);
     }
     
+
+    //For testing
+    public MemberRepository getMemoryMemberRepository() {
+        return memberRepository;
+    }
+
 }
