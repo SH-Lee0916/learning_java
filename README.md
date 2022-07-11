@@ -4,4 +4,4 @@
 * Basic syntax of Java
 * Implementing calendar
 
-* Basic of Spring
+* Spring Basic
