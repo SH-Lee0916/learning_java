@@ -1,6 +1,6 @@
 package hello.core.member;
 
-import org.springframework.beans.factory.annotation.Autowired;
+// import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component // Name bean @Component("Memberservice2")
@@ -8,7 +8,7 @@ public class MemberServiceImpl implements MemberService{
 
     private final MemberRepository memberRepository;
 
-    @Autowired // ac.getBean(MemberRepository.class), Find same type and inject it
+    // @Autowired // ac.getBean(MemberRepository.class), Find same type and inject it
     public MemberServiceImpl(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
