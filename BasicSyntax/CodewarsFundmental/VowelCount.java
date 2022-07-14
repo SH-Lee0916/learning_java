@@ -1,6 +1,6 @@
 // https://www.codewars.com/kata/54ff3102c1bad923760001f3
 
-package BasicSyntax.codewars_fundmental;
+package BasicSyntax.CodewarsFundmental;
 
 public class VowelCount {
     public int getCount(String str) {

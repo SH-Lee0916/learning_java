@@ -1,4 +1,4 @@
-package BasicSyntax.codewars_fundmental;
+package BasicSyntax.CodewarsFundmental;
 
 public class SquareEveryDigit {
     public int squareDigits(int n) {

@@ -1,4 +1,4 @@
-package BasicSyntax.codewars_fundmental;
+package BasicSyntax.CodewarsFundmental;
 
 // https://www.codewars.com/kata/56747fd5cb988479af000028
 public class GetTheMiddleCharacter {

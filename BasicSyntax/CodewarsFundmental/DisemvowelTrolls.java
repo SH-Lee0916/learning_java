@@ -1,4 +1,4 @@
-package BasicSyntax.codewars_fundmental;
+package BasicSyntax.CodewarsFundmental;
 
 public class DisemvowelTrolls {
     public String disemvowel(String str) {

@@ -1,4 +1,4 @@
-package BasicSyntax.codewars_fundmental;
+package BasicSyntax.CodewarsFundmental;
 import java.util.Arrays;
 
 public class HighestAndLowest {

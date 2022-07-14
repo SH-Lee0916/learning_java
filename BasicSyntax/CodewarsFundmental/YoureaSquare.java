@@ -1,4 +1,4 @@
-package BasicSyntax.codewars_fundmental;
+package BasicSyntax.CodewarsFundmental;
 
 // https://www.codewars.com/kata/54c27a33fb7da0db0100040e/
 public class YoureaSquare {
