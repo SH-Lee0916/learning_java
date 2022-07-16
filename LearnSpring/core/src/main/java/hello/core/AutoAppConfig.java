@@ -1,12 +1,12 @@
 package hello.core;
 
-import org.springframework.context.annotation.Bean;
+// import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.FilterType;
 
-import hello.core.member.MemberRepository;
-import hello.core.member.MemoryMemberRepository;
+// import hello.core.member.MemberRepository;
+// import hello.core.member.MemoryMemberRepository;
 
 @Configuration
 @ComponentScan( // To preserve example code, added exclude filter.
@@ -17,8 +17,8 @@ import hello.core.member.MemoryMemberRepository;
 public class AutoAppConfig {
     
     // overiding -> 수동이 우선, 자동 등록 overide
-    @Bean(name = "memoryMemberRepository")
-    MemberRepository memberRepository() {
-        return new MemoryMemberRepository();
-    }
+    // @Bean
+    // MemberRepository memberRepository() {
+    //     return new MemoryMemberRepository();
+    // }
 }
