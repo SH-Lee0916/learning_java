@@ -2,6 +2,7 @@ package hello.core.scope;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
+import javax.inject.Provider;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -47,10 +48,10 @@ public class SingletonWIthPrototypeTest1 {
     @Scope("singleton")
     static class ClientBean {
         @Autowired
-        private ObjectProvider<PrototypeBean> prototypeBeanProvider; // or ObjectFactory, ObjectProvider는 편의기능 추가 제공
+        private Provider<PrototypeBean> prototypeBeanProvider; // or ObjectFactory, ObjectProvider는 편의기능 추가 제공
 
         public int logic() {
-            PrototypeBean prototypeBean = prototypeBeanProvider.getObject(); // 새로운 Prototype 생성
+            PrototypeBean prototypeBean = prototypeBeanProvider.get(); // 새로운 Prototype 생성
             prototypeBean.addCount();
             return prototypeBean.getCount();
         }
